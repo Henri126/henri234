@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageExplorer = document.getElementById('imageExplorer');
     const footer = document.querySelector('.footer');
 
-
     const imageData = [
         { url: '28.12.2023_1.png', date: '28-12-2023' },
         { url: '28.12.2023_2.png', date: '28-12-2023' },
@@ -14,13 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
         { url: '29.12.2023_4.png', date: '29-12-2023' },
     ];
 
-
     const groupedImages = groupByDate(imageData);
 
    
     renderImageExplorer(groupedImages, imageExplorer);
 
-    
     function groupByDate(images) {
         const grouped = {};
         images.forEach(image => {
@@ -32,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return grouped;
     }
 
-    
     function renderImageExplorer(groupedImages, container) {
         Object.keys(groupedImages).forEach(date => {
             const imageContainer = document.createElement('div');
@@ -63,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             container.appendChild(imageContainer);
         });
     }
-
 
     function openImage(imageUrl) {
       
