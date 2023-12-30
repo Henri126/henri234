@@ -31,4 +31,16 @@ a:hover {
     background-color: #2980b9;
 }
 
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
+.show-footer{
+    display: block;
+}
