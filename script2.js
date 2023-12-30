@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { url: '29.12.2023_3.png', date: '29-12-2023' },
         { url: '29.12.2023_4.png', date: '29-12-2023' },
         { url: '31.12.2023_1.png', date: '31-12-2023' },
+
     ];
 
     const groupedImages = groupByDate(imageData);
