@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const videoExplorer = document.getElementById('videoExplorer');
     const footer = document.querySelector('.footer');
 
-    const videoData = [
+   /const videoData = [
         { url: '#', date: '28-12-2023'},
-    ];
+    ];/
 
     const groupedVideos = groupByDate(videoData);
 
