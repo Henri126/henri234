@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const menuLinks = document.getElementById('menuLinks');
+    menuLinks.classList.toggle('show');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const imageExplorer = document.getElementById('imageExplorer');
     const footer = document.querySelector('.footer');
@@ -100,3 +105,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.dispatchEvent(new Event('scroll'));
 });
+
+function toggleMenu() {
+    const menuLinks = document.getElementById('menuLinks');
+    menuLinks.classList.toggle('show');
+}
+
