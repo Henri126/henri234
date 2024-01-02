@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
             footer.style.display = 'none'
         }
     });
-
+       
     observer.observe(document.querySelector('.footer'));
 });
+
+function toggleMenu() {
+    const menuLinks = document.getElementById('menuLinks');
+    menuLinks.classList.toggle('show');
+}
