@@ -1,7 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const footer = document.querySelector('.footer');
     const viewPicturesButton = document.getElementById('viewPicturesButton');
     const viewVideosButton = document.getElementById('viewVideosButton');
+    const viewNewsButton = document.getElementById('viewNewsButton');
+    const newsContainer = document.getElementById('newsContainer'); 
+
+    const newsData = [
+        {date: '03-01-2024', content: 'new video wall.'},
+    ];
+
+    renderNews(newsData, newsContainer);
+   
+    function renderNews(newsData, container) {
+        newsData.forEach(newsItem => {
+            const newsItemContainer = document.createElement('div');
+            newsItemContainer.classList.add('news-item');
+            newsItemContainer.dataset.date = newsItem.date;
+
+            const dateHeader = document.createElement('h3');
+            dateHeader.classList.add('date');
+            dateHeader.textContent = newsItem.date;
+            dateHeader.addEventListener('click', () => showNews(newsItem.date, newsItem.content));
+
+            const newsContent = document.createElement('p');
+            newsContent.classList.add('news-content');
+            newsContent.textContent = newsItem.content;
+
+            newsItemContainer.appendChild(dateHeader);
+            newsItemContainer.appendChild(newsContent);
+            container.appendChild(newsItemContainer);
+        });
+    }
 
     viewPicturesButton.addEventListener('click', function() {
         window.location.href = 'pictures.html';
@@ -9,6 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     viewVideosButton.addEventListener('click', function() {
         window.location.href = 'video.html';
+    });
+
+    viewNewsButton.addEventListener('click', function() {
+        window.location.href = 'news.html';
     });
 
     const observer = new IntersectionObserver(entries => {
@@ -19,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
       
-    observer.observe(document.querySelector('.footer'));
 });
 
 function toggleMenu() {

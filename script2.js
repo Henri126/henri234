@@ -5,10 +5,9 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const imageExplorer = document.getElementById('imageExplorer');
-    const footer = document.querySelector('.footer');
 
     const imageData = [
-        //{ url: '28t.12.2023.png', date: '28-12-2023 test pic' },
+        { url: '28t.12.2023.png', date: '28-12-2023 test pic' },
         { url: '28.12.2023_1.png', date: '28-12-2023' },
         { url: '28.12.2023_2.png', date: '28-12-2023' },
         { url: '28.12.2023_3.png', date: '28-12-2023' },
@@ -17,13 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
         { url: '29.12.2023_2.png', date: '29-12-2023' },
         { url: '29.12.2023_3.png', date: '29-12-2023' },
         { url: '29.12.2023_4.png', date: '29-12-2023' },
-        //{ url: 'tokyo1.png ', date: '29-12-2023 (the bible tokyo drift 2)' },
-        //{ url: 'tokyo2.png', date: '29-12-2023 (the bible tokyo drift 2)' },
-        //{ url: 'tokyo3.png', date: '29-12-2023 (the bible tokyo drift 2)' },
-        //{ url: 'tokyo4.png', date: '29-12-2023 (the bible tokyo drift 2)' },
-        //{ url: 'tokyo5.png', date: '29-12-2023 (the bible tokyo drift 2)' },
-        //{ url: 'tokyo6.png', date: '29-12-2023 (the bible tokyo drift 2)' },
-        //{ url: '30t.12.2023.png', date: '30-12-2023 MC picture wall test (old name btw)' },
+        { url: 'tokyo1.png ', date: '29-12-2023 (the bible tokyo drift 2)' },
+        { url: 'tokyo2.png', date: '29-12-2023 (the bible tokyo drift 2)' },
+        { url: 'tokyo3.png', date: '29-12-2023 (the bible tokyo drift 2)' },
+        { url: 'tokyo4.png', date: '29-12-2023 (the bible tokyo drift 2)' },
+        { url: 'tokyo5.png', date: '29-12-2023 (the bible tokyo drift 2)' },
+        { url: 'tokyo6.png', date: '29-12-2023 (the bible tokyo drift 2)' },
+        { url: '30t.12.2023.png', date: '30-12-2023 MC picture wall test (old name btw)' },
         { url: '31.12.2023_1.png', date: '31-12-2023' },
         { url: '31.12.2023_2.png', date: '31-12-2023' },
         { url: '31.12.2023_3.png', date: '31-12-2023' },

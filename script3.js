@@ -5,10 +5,12 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', function () {
     const videoExplorer = document.getElementById('videoExplorer');
-    const footer = document.querySelector('.footer');
 
    const videoData = [
-        //{ url: '02.01.2024.mp4', date: '02-01-2024'},
+        { url: '30t-12-2023_1.mp4', date: '30-12-2023'},
+        { url: '30t-12-2023_2.mp4', date: '30-12-2023'},
+        { url: '30t-12-2023_3.mp4', date: '30-12-2023'},
+        { url: '02.01.2024.mp4', date: '02-01-2024'},
     ];
 
     const groupedVideos = groupByDate(videoData);
