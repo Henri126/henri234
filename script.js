@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     const albums = [
-        //{ title: 'face tat', cover: 'face_tat_cover.jpg', playlist: 'face_tat.html' },//
+        { title: 'face tat', cover: 'face_tat_cover.jpg', playlist: 'face_tat.html' },
     ];
 
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const newsData = [
         {date: '05-01-2024', content: 'removed the coming soon for the homepage and fixed the navbar in picture wall.'},
-        //{date: '05-01-2024', content: 'added the music wall.'},//
+        {date: '05-01-2024', content: 'added the music wall.'},
     ];
 
     renderNews(newsData, newsContainer);
