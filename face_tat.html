@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>face tat</title>
+        <link rel="stylesheet" href="face_tat.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu-links" id="menuLinks">
+           <a href="face_tat.html">Face Tat</a>
+           <a href="#">Coming soon more!</a>
+           <a href="music.html">music</a>
+           <a href="index.html">home</a>
+        </div>
+        </div>
+        <div class="album-details">
+           <h1>Face Tat</h1>
+        </div>
+        <div class="album-cover">
+            <div class="cover">
+                <img src="face_tat_cover.jpg" alt="face">
+                <p>front cover</p>
+            </div>
+        </div>
+
+        <div class="album-info">
+            <h1>About the Album</h1>
+            <p>
+                "Face Tat"
+                <br> is the debut studio album by American drummer.
+                 and multi-instrumentalist <br>
+                 Zach Hill.
+                <br>
+                The album was released on October 19, 2010,
+                <br> and features a blend of experimental rock,
+                <br>
+                noise, and electronic elements.
+                <br> It showcases Hill's unique and eclectic musical style.
+            </p>
+        </div>
+
+        <div class="audio-player" id="audioPlayerContainer">
+            <h2>listen to the Album</h2>
+            <audio id="audioPlayer" controls>
+                <source src="" type="audio/mp3">
+            </audio>
+
+            <ul id="playlist">
+                <h1>track list</h1>
+                <li data-src="face tat/1. Memo to the Man.mp3">1. Memo to the Man</li>
+                <li data-src="face tat/2. The Primitives Talk.mp3">2. The Primitives Talk</li>
+                <li data-src="face tat/3. Ex-Ravers.mp3">3. Ex-Ravers</li>
+                <li data-src="face tat/4. The Sacto Smile.mp3">4. The Sacto Smile</li>
+                <li data-src="face tat/5. Green Bricks.mp3">5. Green Bricks</li>
+                <li data-src="face tat/6. House of Hits.mp3">6. House of Hits</li>
+                <li data-src="face tat/7. Jackers.mp3">7. Jackers</li>
+                <li data-src="face tat/8. Burner In the Video.mp3">8. Burner In the Video</li>
+                <li data-src="face tat/9. Dizzy from the Twins.mp3">9. Dizzy from the Twins</li>
+                <li data-src="face tat/10. Gross Sales.mp3">10. Gross Sales</li>
+                <li data-src="face tat/11. Total Recall.mp3">11. Total Recall</li>
+                <li data-src="face tat/12. Face Tat.mp3">12. Face Tat</li>
+                <li data-src="face tat/13. Second Life.mp3">13. Second Life</li>
+            </ul>
+        </div>
+
+        <script src="face_tat.js"></script>
+    </body>
+</html>
