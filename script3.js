@@ -47,8 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const iframe = document.createElement('iframe');
                 iframe.src = video.url;
-                video.controls = true;
-                video.autoplay = false;
                 iframe.frameBorder = '0';
                 iframe.allowFullscreen = true;
                 thumbnail.appendChild(iframe);
@@ -93,4 +91,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.dispatchEvent(new Event('scroll'));
 });
-

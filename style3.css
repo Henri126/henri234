@@ -91,17 +91,6 @@ h1 {
     width: calc(50% - 5px); 
 }
 
-.thumbnail img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.2s;
-}
-
-.thumbnail img:hover {
-    transform: scale(1.1);
-}
-
 .modal {
     position: fixed;
     top: 0;
@@ -113,17 +102,6 @@ h1 {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-}
-
-.modal img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.modal img:hover {
-    transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
