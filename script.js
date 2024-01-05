@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const newsContainer = document.getElementById('newsContainer'); 
 
     const newsData = [
-        {date: '03-01-2024', content: 'new video wall.'},
+        {date: '05-01-2024', content: 'removed the coming soon for the homepage and fixed the navbar in picture wall.'},
     ];
 
     renderNews(newsData, newsContainer);
