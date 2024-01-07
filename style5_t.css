@@ -1,0 +1,136 @@
+body{
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+    color: #ddd;
+}
+
+.section {
+    background-color: pink;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.album-cover {
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    text-align: center; 
+}
+
+.album-cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 5px; 
+}
+
+.album-cover p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center; 
+}
+
+.album-cover:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .thumbnail {
+        width: 100%;
+    }
+        h1 {
+            font-size: 30px;
+        }
+        h3{
+            font-size: 25px;
+        }
+    
+        p {
+            font-size: 20px;
+        }
+    
+        .menu-icon {
+            display: block;
+        }
+    
+        .menu-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+            width: 100%;
+            padding: 10px;
+        }
+    
+        .menu-links.show {
+            display: flex;
+        }
+    
+        .menu-links a {
+            font-size: 20px;
+        }
+    }
